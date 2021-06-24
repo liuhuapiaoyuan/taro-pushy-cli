@@ -1,6 +1,6 @@
 {
   "name": "@suntree/taro-pushy-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "适配taro的热更新支持",
   "main": "index.js",
   "directories": {
