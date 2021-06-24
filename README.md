@@ -6,8 +6,37 @@
 所有使用方式和pushy的使用方式完全一样，可以参考下面的文档，唯一需要注意的是在taro使用的时候需要在编译包配置好
 
 
+- 1. 安装
 
-# react-native-update [![npm version](https://badge.fury.io/js/react-native-update.svg)](http://badge.fury.io/js/react-native-update)
+```
+npm i @suntree/taro-pushy-cli
+```
+
+- 2. 配置```config/hot.js```
+```javascript
+module.exports = {
+  env: {
+    NODE_ENV: '"production"'
+  },
+  defineConstants: {
+  },
+  terser:{
+    enable: true,
+  },
+  rn: {
+    appName: 'suntree_ems',
+    output: {
+      ios: './.pushy/intermedia/ios/index.bundlejs',
+      iosAssetsDest: './.pushy/intermedia/ios',
+      android: './.pushy/intermedia/android/index.bundlejs',
+      androidAssetsDest: './.pushy/intermedia/android'
+    },
+  }
+}
+```
+
+
+# @suntree/taro-pushy-cli [![npm version](https://badge.fury.io/js/%40suntree%2Ftaro-pushy-cli.svg)](https://badge.fury.io/js/%40suntree%2Ftaro-pushy-cli)
 
 本组件是面向 React Native 提供热更新功能的组件，详情请访问我们的官方网站 <https://pushy.reactnative.cn>。
 
