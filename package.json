@@ -1,0 +1,58 @@
+{
+  "name": "@suntree/taro-pushy-cli",
+  "version": "1.0.0",
+  "description": "适配taro的热更新支持",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "prepublish": "babel src --out-dir lib"
+  },
+  "keywords": [
+    "taro",
+    "热更新",
+    "react-native",
+    "pushy"
+  ],
+  "author": "@suntree",
+  "license": "ISC",
+  "bin": {
+    "pushy": "lib/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/reactnativecn/react-native-pushy/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "app-info-parser": "^1.0.0",
+    "cli-arguments": "^0.2.1",
+    "filesize-parser": "^1.5.0",
+    "fs-extra": "8",
+    "gradle-to-js": "^2.0.0",
+    "node-bsdiff": "^0.1.8",
+    "node-fetch": "^2.6.1",
+    "progress": "^2.0.3",
+    "read": "^1.0.7",
+    "request": "^2.88.2",
+    "tcp-ping": "^0.1.1",
+    "tty-table": "4.1",
+    "update-notifier": "^4.1.1",
+    "yauzl": "^2.10.0",
+    "yazl": "2.5.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-plugin-transform-es2015-spread": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "files": [
+    "lib",
+    "cli.json"
+  ]
+}
